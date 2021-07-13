@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+
+    <div id="demoClick">This is initial text from HTML</div>
+    <button type="button" onclick="clickEvent()">Click Event</button>
+
+    <div id="demoDblclick">This is double click test</div>
+    <button type="button" onclick="dblclickEvent()">Dbl Click Event</button>
+    
+
+
+    <script>
+        function clickEvent(){
+            document.getElementById("demoClick").innerHTML = "This is text from JavaScript";
+        }
+
+        function dblclickEvent(){
+            document.getElementById("demoDblclick").innerHTML = "Double Click Event Triggerred";
+        }
+
+        function keyupEvent(){
+            alert("keyup event triggerred")
+        }
+    </script>
+    
+</body>
+</html>
